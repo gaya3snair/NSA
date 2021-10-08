@@ -1,0 +1,66 @@
+mkdir sales
+cd sales
+mkdir location1
+mkdir location2
+mkdir location3
+cd location1
+cat > sales1.txt
+ cat > sales2.txt
+ cat > sales3.txt
+cd ..
+cd location2
+cat > pur1
+cat > pur2
+cd ..
+cd location3
+cat > stock1
+cat > stock2
+
+
+cd ..
+cd location2
+cat pur1 pur2 > pur3.txt
+cat pur3.txt
+//
+this is pur1 file
+this is pur2 file
+//
+
+cp -r pur3.txt ~\sales\location3\stock3.txt
+
+cd ..
+chmod +rwx stock3.txt
+ls -al
+total 20
+drwxr-xr-x 2 exam exam 4096 Oct  8 14:21 .
+drwxr-xr-x 5 exam exam 4096 Oct  8 13:55 ..
+-rw-r--r-- 1 exam exam  155 Oct  8 14:04 stock1
+-rw-r--r-- 1 exam exam   64 Oct  8 14:05 stock2
+-rwxr-xr-x 1 exam exam    8 Oct  8 14:21 stock3.txt
+
+
+head -n 10 stock1
+this is stock1
+stock1
+stock1
+stock1
+inside location3
+inside location3
+in the main directory sales
+sales
+sales
+
+
+ls -al
+total 20
+drwxr-xr-x  5 exam exam 4096 Oct  8 13:55 .
+drwxr-xr-x 18 exam exam 4096 Oct  8 14:21 ..
+drwxr-xr-x  2 exam exam 4096 Oct  8 13:59 location1
+drwxr-xr-x  2 exam exam 4096 Oct  8 14:26 location2
+drwxr-xr-x  2 exam exam 4096 Oct  8 14:21 location3
+
+
+
+
+
+
